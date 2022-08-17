@@ -72,11 +72,12 @@
     width: 32%;;
     ul{
         padding: 0px;
+        border: 1px solid #CED4DA;
+        border-bottom: 0px;
     }
     li{
         padding: 12px;
-        border: 1px solid #CED4DA;
-        border-radius: 0px 0px 2px 2px;
+        border-bottom: 1px solid #CED4DA;
     }
     .topic,.topic-student{
         h3,p{
@@ -163,7 +164,7 @@
         border-bottom: 1px solid #CED4DA;
         padding-bottom: 16px;
         a{
-           width: 180px; 
+           width: 40%; 
            padding: 10px 12px; 
            background-color: #F8F9FA;
            border: 1px solid #CED4DA;
@@ -177,6 +178,7 @@
 .edit{
     background-color: #F8F9FA;
     padding: 16px 25px;
+    border-bottom: 1px solid #CED4DA;
     select{
         background-color: #F8F9FA;
     }
@@ -208,7 +210,5 @@
         background-color: #198754;
         color:#fff
     }
-    
-    
 }
     
