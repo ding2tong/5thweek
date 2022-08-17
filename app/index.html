@@ -2,11 +2,128 @@
 title: 首頁
 layout: ./app/layout.ejs
 engine: ejs
-current: index
 ---
-
-<h1>
-  這是一段話
-</h1>
-
-<div class="box"></div>
+<div class="d-flex">
+  <div class="navbar d-flex flex-column align-items-center justify-content-between">
+    <div class="d-flex flex-column">
+      <a href="#"><img src="./assets/images/logo-ANSWER.svg" alt=""></a>
+      <ul class="list-unstyled">
+        <li><span class="material-symbols-outlined">insert_chart</span><a href="#">Dashboard</a></li>
+        <li><span class="material-symbols-outlined">forum</span><a href="#">Question</a></li>
+        <li><span class="material-symbols-outlined">Assignment</span><a href="#">Assignment</a></li>
+        <li><span class="material-symbols-outlined">Video_Library</span><a href="#">Course</a></li>
+        <li><span class="material-symbols-outlined">Group</span><a href="#">Admin</a></li>
+        <li><span class="material-symbols-outlined">Settings</span><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="portrait"><img class="d-block" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt=""></div>
+      <h3>Andy Chen<br><span>sandy0401@mail.com</span></h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <h2>Assignment</h2>
+        <p>All Courses<span class="material-symbols-outlined">Expand_More</span></p>
+      </div>
+      <div>
+        <ul class="d-flex align-items-center">
+          <li class="material-symbols-outlined">search</li>
+          <li class="material-symbols-outlined">Notifications_Active</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-5 mb-1">All (4)<span class="material-symbols-outlined">Expand_More</span></p>
+    <div class="d-flex justify-content-between">
+      <div class="list">
+        <ul>
+          <li class="first">
+            <div class="topic d-flex justify-content-between">
+              <h3>Chapter Assignment 2</h3>
+              <p>4 hrs ago</p>
+            </div>
+            <div class="topic-student d-flex justify-content-between align-items-end">
+              <h3>Please check this file…</h3>
+              <p>Emily Wang</p>
+            </div>
+          </li>
+          <li>
+            <div class="topic d-flex justify-content-between">
+              <h3>Chapter Assignment 1</h3>
+              <p>12 hrs ago</p>
+            </div>
+            <div class="topic-student d-flex justify-content-between align-items-end">
+              <h3>My Homework</h3>
+              <p>David Xu</p>
+            </div>
+          </li>
+          <li>
+            <div class="topic d-flex justify-content-between">
+              <h3>Final Assignment</h3>
+              <p>18 hrs ago</p>
+            </div>
+            <div class="topic-student d-flex justify-content-between align-items-end">
+              <h3>Have a problem with this…</h3>
+              <p>Tony Wei</p>
+            </div>
+          </li>
+          <li>
+            <div class="topic d-flex justify-content-between">
+              <h3>Final Assignment</h3>
+              <p>19 hrs ago</p>
+            </div>
+            <div class="topic-student d-flex justify-content-between align-items-end">
+              <h3>Did I do it right?</h3>
+              <p>Christina Lin</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-topic d-flex align-items-center justify-content-between">
+          <div>
+            <h3>Chapter Assignment 2 / HTML&CSS</h3>
+            <p>Please check this file for me, thanks!</p>
+          </div>
+            <p class="material-symbols-outlined">More_vert</p>
+        </div>
+        <div class="assignment-area">
+          <div class="d-flex align-items-strech">
+            <div class="portrait"><img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="Emily Wang"></div>
+            <div>
+              <h3>Emily Wang</h3>
+              <p class="time">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <div class="assignment-area-text">
+            <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+            <a class="d-block" href=""><span class="material-symbols-outlined">attach_file</span>HW-2-David.zip</a>
+          </div>
+        </div>
+        <div class="edit">
+          <ul class="edit-top mb-0 ps-0 d-flex align-items-center">
+            <li class="me-3">
+              <select class="border-0" name="BodyText" id="BodyText">
+                <option value="Body Text">Body Text</option>
+              </select>
+            </li>
+            <li class="material-symbols-outlined">Format_Bold</li>
+            <li class="material-symbols-outlined">Format_Italic</li>
+            <li class="material-symbols-outlined">Format_List_Bulleted</li>
+            <li class="material-symbols-outlined">Format_List_Numbered</li>
+            <li class="material-symbols-outlined">Image</li>
+            <li class="material-symbols-outlined">Link</li>
+            <li class="material-symbols-outlined"></li>
+          </ul>
+        </div>
+        <div class="reply">
+          <input class="answer d-block border-0" type="text" name="reply" placeholder="Reply an answer…">
+          <div class="d-flex justify-content-end mb-3 me-3 ">
+            <input class="cancel" type="submit" value="Cancel">
+            <input class="reply" type="submit" value="Reply">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
